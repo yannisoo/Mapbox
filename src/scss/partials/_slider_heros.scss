@@ -1,0 +1,272 @@
+.slider_heros {
+
+        position: relative;
+
+        ul { bottom: 0;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        list-style: outside none none;
+        padding-left: 0;
+
+            li {
+                width: 17px;
+            }
+
+            span {
+                background-color: $main-second-color;
+                border-radius: 50%;
+                opacity: 0.5;
+                display: block;
+                height: 8px;
+                position: relative;
+                text-indent: -999em;
+                width: 8px;
+                margin: 0 0.5rem;
+                padding: 0.5rem;
+                cursor: pointer
+            }
+
+            span:after {
+                box-sizing: border-box;
+            }
+
+            span:after, .btn-scroll {
+                border-radius: 50%;
+            }
+
+            li.slick-active span,
+            ul li:hover span {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+        }
+
+        .slide_heros{
+
+            height: 35rem;
+            background-size: cover;
+            background-position: center;
+                .main_container {
+                    max-width: 86rem;
+                }
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 0.5s ease 0s;
+                    z-index: -1;
+                    background: $image_filtre-1 none repeat scroll 0 0;
+                }
+
+                .slide_heros_text {
+
+                    padding-top: 3rem;
+                    margin: 0 auto;
+    
+                        .slide_heros_text__title{
+                           font-size: 2.6rem;
+                        }
+
+                        .slide_heros_text__title2{
+                            font-size: 1.8rem; 
+                                .slide_heros_text__title2-color{
+                                    color: $fourth-color;
+                                }
+                        }
+                        
+                        .slide_heros_text__title,
+                        .slide_heros_text__title2 {
+                            line-height: 2.2rem;
+                            width: 100%;
+                            margin: 0 auto;
+                            color: $main-second-color;
+                            margin-bottom: 3rem;
+                            z-index: -1;
+                        }
+
+                        .slide_heros_text__cta{
+                            color: $main-second-color;
+                            width: auto;
+                            margin: 0 auto;
+                            border: 2px solid $main-second-color;
+                            display: block;
+                            font-size: 1.4rem;
+                            text-align: center;
+                            border-radius: 5px;
+                            padding:2rem;
+                            @include transition;
+                            &:hover{
+                                color:$third-color;
+                                background-color: $main-second-color;
+                            }
+                        }
+                }
+
+        }
+
+}
+
+@media (min-width: 1170px){
+
+    .slider_heros {
+        .slick-arrow {
+                position: absolute;
+                z-index: 5;
+            }
+
+        .slick-prev {
+                    top: 50%;
+                    transform:translateY(-50%);
+                    left: 50%;
+                    margin-left:-62rem;
+                }
+
+        .slick-next {
+                    top: 50%;
+                    transform:translateY(-50%);
+                    right: 50%;
+                    margin-right:-62rem;
+                }
+
+        li {
+            span{
+                display: none;
+            }
+        }
+        .slide_heros{
+            height: 67rem;
+            .slide_heros_text {
+                padding-top: 25rem;
+
+                .slide_heros_text__title,
+                .slide_heros_text__title2 {
+                    max-width: 100%;
+                    width: 100%;
+                    line-height: 2.2rem;
+                }
+
+                .slide_heros_text__title{
+                    font-size: 5.8rem;
+                    margin-bottom: 4rem;
+                    line-height: 5rem;
+                }
+
+                .slide_heros_text__title2{
+                    font-size: 2.4rem;
+                    margin-bottom: 3.5rem;
+                }
+
+                .slide_heros_text__cta{
+                    font-size: 1.4rem;
+                    width: auto;
+                    margin: 0; 
+                    display: inline-block;
+
+                }
+            }
+        }
+        
+    }
+
+}
+
+/*--------------------*/
+/* Fillpath (http://www.nizuka.fr/)*/
+/*--------------------*/
+.color-10 { background: #f3cf3f; }
+
+.slider_heros .slick-arrow {
+    width: 100px;
+    height: 100px;
+}
+
+.slider_heros .icon-wrap {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 43%;
+    top: 2.8rem;
+}
+
+.slider_heros .slick-arrow::before, 
+.slider_heros .slick-arrow::after,
+.slider_heros .icon-wrap::before,
+.slider_heros .icon-wrap::after {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 20%;
+    background: #c1c1c1;
+    content: '';
+    transition: transform 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent; /* for FF */
+}
+
+.slider_heros .icon-wrap::before,
+.slider_heros .icon-wrap::after {
+    z-index: 100;
+    height: 0;
+    background: #fff;
+    transition: height 0.3s, transform 0.3s;
+}
+
+.slider_heros .slick-arrow::before,
+.slider_heros .icon-wrap::before {
+    top: 50%;  
+    transform: translateX(-50%) rotate(-135deg);
+    transform-origin: 50% 0%;
+}
+
+.slider_heros .slick-arrow.next::before,
+.slider_heros .slick-arrow.next .icon-wrap::before {
+    transform: translateX(-50%) rotate(135deg);
+    transform-origin: 50% 0%;
+}
+
+.slider_heros .slick-arrow::after,
+.slider_heros .icon-wrap::after {
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: 0 0;
+}
+
+.slider_heros .slick-arrow.next::after,
+.slider_heros .slick-arrow.next .icon-wrap::after {
+    transform: translateX(-50%) rotate(45deg);
+    transform-origin: 100% 0%;
+}
+
+.slider_heros .slick-arrow:hover .icon-wrap::before,
+.slider_heros .slick-arrow:hover .icon-wrap::after {
+    height: 50%;
+}
+
+.slider_heros .slick-arrow:hover::before,
+.slider_heros .slick-arrow:hover .icon-wrap::before {
+    transform: translateX(-50%) rotate(-125deg);
+}
+
+.slider_heros .slick-arrow.next:hover::before,
+.slider_heros .slick-arrow.next:hover .icon-wrap::before {
+    transform: translateX(-50%) rotate(125deg);
+}
+
+.slider_heros .slick-arrow:hover::after,
+.slider_heros .slick-arrow:hover .icon-wrap::after {
+    transform: translateX(-50%) rotate(-55deg);
+}
+
+.slider_heros .slick-arrow.next:hover::after,
+.slider_heros .slick-arrow.next:hover .icon-wrap::after {
+    transform: translateX(-50%) rotate(55deg);
+}

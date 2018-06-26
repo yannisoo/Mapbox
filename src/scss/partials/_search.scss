@@ -1,0 +1,50 @@
+.search__page{
+    .search__title{
+        margin-top: 10rem;
+    }
+    .search_main{
+
+    }
+
+    .search__content{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto 10rem;
+            article{
+                display: block;
+                width: 100%;
+                height: auto;
+                margin-right: 3%;
+            }
+            
+            article:nth-child(4n){
+                margin-right:0;
+            }
+
+            article img {
+                width: 25%;
+                min-width: 25%;
+                height: auto;
+            }
+            .entry-header{
+                display: flex;
+                margin-bottom: 2rem;
+                .entry_container{
+                    display: flex;
+                    flex-direction: column;
+                    .entry-title a{
+                        font-size: 3.5rem;
+                    }
+                    .entry-title,
+                    .entry-content{
+                        margin : 0;
+                        padding-left: 2rem;
+
+                    }
+                }
+            }
+
+
+    }
+
+}

@@ -1,0 +1,21 @@
+.bgimg{
+   position:absolute;
+   width:80%;
+   padding-top:50%;
+   margin:10%;
+   left:0px;
+   right:0px;
+   margin: auto;
+  
+   background-color:#c9d9ff;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   
+  transition:opacity 0.3s ease-out;
+  opacity:0;
+  
+  &.loaded{
+    opacity:1;
+  }
+}

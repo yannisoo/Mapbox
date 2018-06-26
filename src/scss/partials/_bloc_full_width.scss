@@ -1,0 +1,94 @@
+.bloc_full_width {
+        min-height: 35rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        &:before {
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 0.5s ease 0s;
+            z-index: 0;
+            background: $image_filtre-1 none repeat scroll 0 0;
+                        
+        }
+
+        .bloc_full_width_content{
+            margin: 0 auto;
+            padding-top: 4rem;
+            position: relative;
+            text-align: center;
+            width: 93%;
+            p{ 
+                color: $main-second-color;
+                font-size: 1.4rem;
+                line-height: 2.7rem;
+            }
+
+
+            .bloc_full_width_content__title {
+                color: $fourth-color;
+                margin-bottom: 0;
+            }
+            .bloc_full_width_title_content__subtitle{
+                margin:0;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                color: $main-second-color;
+            }
+        }
+}
+
+
+@media (min-width: 1170px){
+    
+    .full_width {
+
+        &.main_container {
+            margin: 10rem 0;
+            padding:0;
+        }
+    }
+
+    .bloc_full_width {
+        min-height: 59rem;
+
+        .bloc_full_width_content{
+            width: 54rem;
+            padding: 10rem 0;
+            font-size: 1.6rem;
+
+            .bloc_full_width_content__img{
+                padding-bottom: 7rem;
+            }
+
+            .bloc_full_width_content__text{
+                padding-bottom: 8rem;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                margin-bottom: 0;
+            }
+
+            .bloc_full_width_content__title {
+                color: $fourth-color;
+                margin-bottom: 0;
+                font-size: 2.5rem;
+                line-height: 5.5rem;
+                margin-top:0;
+            }
+
+            .bloc_full_width_title_content__subtitle{
+                margin:0;
+                font-size: 1.5rem;
+                line-height: 2.9rem;
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,83 @@
+.color_palette{
+	display: flex;
+	position:fixed;
+	top:20rem;
+	z-index: 999999;
+	background: transparent;
+	padding: 9rem;
+	
+	.color_palette__siteColor,
+	.color_palette__filterColor{
+		a{
+			display: block;
+			height: 5rem;
+			width: auto;
+			border-radius: 0.5rem;
+			margin-right: 5rem;
+			margin-bottom: 5rem;
+			border: 2px solid #000000;
+			line-height: 3;
+			font-weight: bold;
+
+
+		}
+	}
+	.color_palette__siteColor{
+		display:flex;
+		flex-direction: column;
+		
+			a.color_palette_main-color{
+				background-color : $main-color ;	 	
+			}
+			a.color_palette_main-second-color{
+				background-color : $main-second-color ;
+			}
+			a.color_palette_second-color{
+				background-color : $second-color ;
+			}
+			a.color_palette_third-color{
+				background-color : $third-color ;
+			}
+			a.color_palette_fourth-color{
+				background-color : $fourth-color ;
+			}
+			a.color_palette_bg-color-header{
+				background-color : $bg-color-header ;
+			}
+			a.color_palette_bg-color-main{
+				background-color : $bg-color-main ;
+			}
+			a.color_palette_bg-color-second{
+				background-color : $bg-color-second ;
+			}
+			a.color_palette_gallery_span__grey{
+				background-color : $gallery_span__grey ;
+			} 
+		
+		
+	}
+	.color_palette__filterColor{
+			display: flex;
+			flex-direction: column;
+		
+			a.color_palette_image_filtre-1{
+				background-color : $image_filtre-1 ;
+			}
+			a.color_palette_image_filtre-2{
+				background-color : $image_filtre-2 ;
+			}
+			a.color_palette_image_filtre-3{
+				background-color : $image_filtre-3 ;
+			}
+			a.color_palette_image_filtre-4{
+				background-color : $image_filtre-4 ;
+			}
+			a.color_palette_image_filtre-5{
+				background-color : $image_filtre-5 ;
+			}
+			a.color_palette_image_filtre-6{
+				background-color : $image_filtre-6 ;
+			}
+		
+	}
+}

@@ -1,0 +1,31 @@
+.section-home{
+	min-height: 100vh;
+	position: relative;
+}
+.cd-vertical-nav{
+	position: fixed;
+	top:50%;
+	right: 30px;
+	transform: translateY(-50%);
+	a{
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: red;
+		&.current{
+			background: green;
+		}
+	}
+}
+
+.section {
+	background-color: red;
+	width: 80px;
+	height: 80px;
+	a{
+	background-color:blue;	
+	}
+	p{
+		color: red;
+	}
+}

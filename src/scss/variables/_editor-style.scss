@@ -1,0 +1,58 @@
+.main-color {
+   color : $main-color ; } 
+    
+
+.main-second-color {
+   color : $main-second-color ; } 
+    
+
+.second-color {
+   color : $second-color ;  } 
+    
+
+.third-color {
+   color : $third-color ; } 
+    
+
+.fourth-color {
+   color : $fourth-color ; } 
+    
+
+.bg-color-header {
+    color : $bg-color-header;} 
+    
+
+.bg-color-main {
+   color : $bg-color-main  ; } 
+    
+
+.bg-color-second {
+   color : $bg-color-second; } 
+    
+
+.underline {
+  position:relative;
+}
+
+.underline:before {
+    background: $fourth-color none repeat scroll 0 0;
+    bottom: -0.5rem;
+    content: "";
+    height: 0.2rem;
+    left: 0;
+    position: absolute;
+    width: 3rem;
+}
+
+.bouton_click {
+    color: $bg-color-header;
+    max-width: 100%;
+    width: 20rem;
+    margin: 0 auto;
+    border: 2px solid $bg-color-header;
+    display: block;
+    font-size: 1.4rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    border-radius: 5px;
+}

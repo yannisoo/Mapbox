@@ -1,0 +1,134 @@
+.contact{
+	&.main_container{
+		margin:5rem auto;
+		padding:0;
+	}
+	h2{
+		margin: 0 0 4.5rem 0;
+		font-size: 2rem;
+		line-height: 3rem;	
+		font-weight: normal;
+	}
+	.contact_form {
+		.input{
+			padding: 1.2rem 2rem;
+			border-color:$second-color;
+			background-color: $bg-color-main;
+			color: $main-color;
+			margin-bottom: 2rem;
+			&::-webkit-input-placeholder{
+				color: $second-color;
+				line-height:2.8rem;
+			}
+			&::-moz-placeholder{
+				color: $second-color;
+				line-height:2.8rem;
+			}
+			&:-ms-input-placeholder{
+				color: $second-color;
+				line-height:2.8rem;
+			}
+			&::placeholder{
+				color: $second-color;
+				line-height:2.8rem;
+			}
+
+		}
+		.contact_form__message{
+			height: 36rem;
+		}
+
+		.contact_form__submit {
+			margin-bottom: 2rem;
+			cursor: pointer;
+			@include transition;
+            &:hover{
+                background-color:$main-color;
+                color: $fourth-color;
+            }
+		}
+		
+	}
+
+	.contact_findUs{
+		ul{
+			list-style: none;
+			padding-left: 0;
+			font-size: 1.4rem;
+			line-height: 2.7rem;
+			color: $second-color;
+		}
+
+		p{
+			margin: 0;
+		}
+
+		.contact_findUs__title{
+			margin: 0;
+		}
+
+		.contact_findUs__adresse{
+
+		}
+
+		.contact_findUs__phoneMail{
+			color: $third-color;
+			
+			i{
+				font-size: 1.9rem;
+    			margin-right: 1.5rem;
+    			height: 2rem;
+    			line-height: 2rem;
+			}
+			
+		}
+
+		.contact_findUs__map {
+			 height: 33rem;
+		}
+
+	}
+}
+/* MESSAGES D'ERREUR */
+.screen-reader-response,
+.wpcf7-not-valid-tip {
+	color: $error-color;
+		ul{
+			list-style: none;
+			padding:0;
+			li{
+			color: $error-color;
+			}
+		}
+	}
+.wpcf7-response-output.wpcf7-validation-errors{
+	display: none;
+}
+
+
+@media screen and (min-width: 1170px) {
+	.contact{
+
+		&.main_container{
+			margin-top: 10rem;
+			margin-bottom: 10rem;
+		}
+
+		.contact_form {
+			.contact_form__lastname {
+				margin-right: 1rem;
+			}
+
+			.contact_form__firstname {
+				margin-left: 1rem;
+			}
+			.contact_form__lastname,
+			.contact_form__firstname{
+				 width: calc(50% - 1rem);
+			}
+			.contact_form__submit {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

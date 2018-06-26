@@ -1,0 +1,22 @@
+@mixin transformX($transformation:translateX(-50%)) {
+	transform: $transformation;
+	-webkit-transform: $transformation;
+	-moz-transform: $transformation;
+	-ms-transform: $transformation;
+	-o-transform: $transformation;  
+}
+
+@mixin transformY($transformation:translateY(-50%)) {
+	transform: $transformation;
+	-webkit-transform: $transformation;
+	-moz-transform: $transformation;
+	-ms-transform: $transformation;
+	-o-transform: $transformation;  
+}
+
+@mixin transition($time:0.2s){
+	transition: all $time ease-in;
+    -webkit-transition: all $time ease-in;
+    -moz-transition: all $time ease-in;
+    -o-transition: all $time ease-in;
+}

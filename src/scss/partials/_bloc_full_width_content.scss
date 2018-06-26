@@ -1,0 +1,254 @@
+.full_width.main_container{
+            padding:0;
+            margin: 5rem auto;
+        }
+.bloc_full_width__contents{
+    &.article,
+    &.category,
+    &.tag {
+        margin: 0 0 4.5rem;
+    }
+    
+}
+.bloc_full_width__contents{
+    position: relative;
+
+        p{
+          color:$main-second-color;
+        }
+        ul { bottom: 0;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        list-style: outside none none;
+        padding-left: 0;
+
+            li {
+                width: 17px;
+            }
+
+            span {
+                background-color: $main-second-color;
+                border-radius: 50%;
+                opacity: 0.5;
+                display: block;
+                height: 8px;
+                position: relative;
+                text-indent: -999em;
+                width: 8px;
+                margin: 0 0.5rem;
+                padding: 0.5rem;
+                cursor: pointer
+            }
+
+            span:after {
+                box-sizing: border-box;
+            }
+
+            span:after, .btn-scroll {
+                border-radius: 50%;
+            }
+
+            li.slick-active span,
+            ul li:hover span {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+        }
+}   
+
+.bloc_full_width__content {
+        min-height: 35rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        &:before {
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 0.5s ease 0s;
+            z-index: 0;
+            background: $image_filtre-1 none repeat scroll 0 0;
+                        
+        }
+
+        .bloc_full_width_content__text{
+            margin: 0 auto;
+            padding-top: 4rem;
+            position: relative;
+            text-align: center;
+            width: 93%;
+            color: $main-second-color;
+            font-size: 1.4rem;
+            line-height: 2.7rem;
+
+            .bloc_full_width_content_text__title {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2.6rem;
+            }
+
+            .bloc_full_width_title_content_text__subtitle{
+                margin:0;
+            }
+
+            .bloc_full_width_content_text__subtitle-color {
+                color:$fourth-color;
+            }
+        }
+}
+
+
+@media (min-width: 1170px){
+
+    .bloc_full_width__contents{
+
+        margin: 10rem 0;
+
+        
+        p{
+            font-size: 2.4rem;
+            line-height: 2.2rem;
+        }
+        .slick-arrow {
+                position: absolute;
+                z-index: 5;
+            }
+
+        .slick-prev {
+                    top: 50%;
+                    transform:translateY(-50%);
+                    left: 50%;
+                    margin-left:-62rem;
+                }
+
+        .slick-next {
+                    top: 50%;
+                    transform:translateY(-50%);
+                    right: 50%;
+                    margin-right:-62rem;
+                }
+         li {
+            span{
+                display: none;
+            }
+        }
+    }
+
+    .bloc_full_width__content {
+        min-height: 59rem;
+        
+        .bloc_full_width_content__text{
+            padding: 20rem 0;
+            font-size: 2.4rem;
+            line-height: 2.2rem;
+
+            .bloc_full_width_content_text__title {
+                margin-bottom: 0;
+                font-size: 5.8rem;
+                margin-top:0;
+                margin-bottom: 4.5rem;
+                font-weight: normal;
+            }
+        }
+    } 
+}
+
+.color-10 { background: #f3cf3f; }
+
+.bloc_full_width__contents .slick-arrow {
+    width: 100px;
+    height: 100px;
+}
+
+.bloc_full_width__contents .icon-wrap {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 43%;
+    top: 2.8rem;
+}
+
+.bloc_full_width__contents .slick-arrow::before, 
+.bloc_full_width__contents .slick-arrow::after,
+.bloc_full_width__contents .icon-wrap::before,
+.bloc_full_width__contents .icon-wrap::after {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 20%;
+    background: #c1c1c1;
+    content: '';
+    transition: transform 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent; /* for FF */
+}
+
+.bloc_full_width__contents .icon-wrap::before,
+.bloc_full_width__contents .icon-wrap::after {
+    z-index: 100;
+    height: 0;
+    background: #fff;
+    transition: height 0.3s, transform 0.3s;
+}
+
+.bloc_full_width__contents .slick-arrow::before,
+.bloc_full_width__contents .icon-wrap::before {
+    top: 50%;  
+    transform: translateX(-50%) rotate(-135deg);
+    transform-origin: 50% 0%;
+}
+
+.bloc_full_width__contents .slick-arrow.next::before,
+.bloc_full_width__contents .slick-arrow.next .icon-wrap::before {
+    transform: translateX(-50%) rotate(135deg);
+    transform-origin: 50% 0%;
+}
+
+.bloc_full_width__contents .slick-arrow::after,
+.bloc_full_width__contents .icon-wrap::after {
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: 0 0;
+}
+
+.bloc_full_width__contents .slick-arrow.next::after,
+.bloc_full_width__contents .slick-arrow.next .icon-wrap::after {
+    transform: translateX(-50%) rotate(45deg);
+    transform-origin: 100% 0%;
+}
+
+.bloc_full_width__contents .slick-arrow:hover .icon-wrap::before,
+.bloc_full_width__contents .slick-arrow:hover .icon-wrap::after {
+    height: 50%;
+}
+
+.bloc_full_width__contents .slick-arrow:hover::before,
+.bloc_full_width__contents .slick-arrow:hover .icon-wrap::before {
+    transform: translateX(-50%) rotate(-125deg);
+}
+
+.bloc_full_width__contents .slick-arrow.next:hover::before,
+.bloc_full_width__contents .slick-arrow.next:hover .icon-wrap::before {
+    transform: translateX(-50%) rotate(125deg);
+}
+
+.bloc_full_width__contents .slick-arrow:hover::after,
+.bloc_full_width__contents .slick-arrow:hover .icon-wrap::after {
+    transform: translateX(-50%) rotate(-55deg);
+}
+
+.bloc_full_width__contents .slick-arrow.next:hover::after,
+.bloc_full_width__contents .slick-arrow.next:hover .icon-wrap::after {
+    transform: translateX(-50%) rotate(55deg);
+}

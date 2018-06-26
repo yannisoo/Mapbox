@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  outline: none;
+}
+html {
+  font-size : 10px;
+
+}
+body {
+  font-size:22px;
+  font-family: $main-font;
+  color: #000;
+  background-color: $bg-color-main !important;
+  /*transition: all .4s .3s ease-in;*/
+  &.overflowY{
+    overflow-y:hidden;
+  }
+  overflow-x: hidden;
+}
+body,html{
+  min-height: 100%;
+  /* overflow: hidden;*/
+}
+a{
+  color: $third-color;
+  text-decoration : none;
+  background-color: transparent;
+  font-size:1.4rem;
+  @include transition;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+p{
+  font-size: 1.4rem;
+  color:$second-color;
+  line-height: 2.7rem;
+}
+
+h1,h2 {
+  font-size: 2.6rem;
+  line-height: 2.2rem;
+}
+
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 2.7rem; 
+}
+
+h4{
+  font-size:  1.2rem;
+  line-height: 2.5rem;
+}
+
+ul {
+  margin: 1rem auto;
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height:  2.7rem;
+  color:$second-color;
+}
+
+.ta_center{
+  text-align: center;
+}
+.wrapper_width{
+  max-width: 910px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main_container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.full_width {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 1170px){
+    
+
+    a{
+    text-decoration : none;
+    background-color: transparent;
+    font-size:1.4rem;
+    }
+
+    p{
+      font-size: 1.4rem;
+      color:$second-color;
+      line-height: 2.7rem;
+    }
+
+    h1 {
+      font-size: 5.8rem;
+      line-height: 5rem;
+      position: relative;
+    }
+
+    h2{
+      font-size: 3.5rem;
+      line-height: 3rem;
+      position: relative;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+      line-height: 2.4rem;
+      position: relative;
+    }
+
+    h4{
+      font-size:  2rem;
+      line-height: 1.8rem;
+      position: relative;
+    }
+
+
+}

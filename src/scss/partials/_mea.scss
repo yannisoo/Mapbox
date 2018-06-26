@@ -1,0 +1,154 @@
+.mea.main_container {
+    margin: 5rem auto ;
+    padding: 0 2rem;
+}
+
+.mea_article {
+    
+    text-align: left;
+    padding : 0;
+
+    .mea_article__title{
+        font-size: 2.6rem;
+        font-weight: bold;
+        line-height: 3.3rem;
+        position: relative;
+        margin-bottom: 6rem;
+        margin-top: 5rem;
+        color:$main-color; 
+
+        &.underline:before {
+                left:0;
+                @include transformX(translate(0));
+                bottom: -3.5rem;
+
+            }
+    }
+
+    .mea_article__text{
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        color: $second-color;
+        margin-bottom:  3rem;
+    }
+    
+    .mea_article__title2 {
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        margin-bottom: 0;
+        color:$main-color;
+    }
+
+    .mea_article__liste {
+        list-style-type: none;
+        margin : 0;
+        padding-left: 2rem;
+
+            li {
+                color: $second-color;
+                font-size: 1.4rem;
+                line-height: 2.7rem;
+            }
+    }
+
+    .bouton_click {
+        width: auto;
+        font-size: 1.4rem;
+        margin-top: 4.5rem;
+        display: none;
+        @include transition;
+        &:hover{
+            background-color:$main-color;
+            color: $main-second-color;
+        }
+    }
+}
+
+.mea_img {
+
+    padding: 0;
+
+    img{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    .bouton_click {
+        font-size: 1.4rem;
+        padding: 2rem 0rem;
+        @include transition;
+        &:hover{
+            background-color:$main-color;
+            color: $main-second-color;
+        }
+    }
+
+}
+
+.flexReverse{
+    display:block;
+}
+
+@media (min-width: 768px){
+
+    .mea_article {
+        .mea_article__cta {
+        display: block;
+        }
+    }
+    
+    .mea_img {
+        .mea_img__cta {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1170px){
+    .mea{
+        &.main_container{
+            margin:10rem auto;
+        }
+    }
+    .mea_article {
+        .mea_article__title{
+            font-size: 5rem;
+            font-weight: bold;
+            line-height: 5.2rem;
+            margin-top: 0;
+
+                 &:before {
+                bottom: -2.5rem;
+            }
+        }
+
+        .mea_article__title2 {
+            margin-top: 4.3rem;
+            margin-bottom: 0;
+        }
+
+        .bouton_click{
+            margin-left: 0 ;
+            display: inline-block;
+        }
+    }
+
+    .me_img{
+        margin-top:0;
+    }
+
+    .flexReverse {
+        display:flex;
+        flex-direction:row-reverse;
+        }
+        
+    .mea_padding_right{
+        padding-right:6rem;
+        padding-left:0;
+        }
+
+    .mea_padding_left{
+        padding-left:6rem;
+        padding-right:0;
+        }
+}

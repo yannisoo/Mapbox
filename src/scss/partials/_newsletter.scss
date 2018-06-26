@@ -1,0 +1,107 @@
+.newsletter{
+    color:$main-second-color;
+
+
+    &.full_width{
+        background : $bg-color-second none repeat scroll 0 0;
+        padding: 5rem 0 4rem;
+
+    }
+
+    .main_container{
+        text-align: center;
+        margin-top: 0;
+
+    }
+
+    .newsletter__title{
+        position: relative;
+        font-size: 2.6rem;
+        line-height: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 5.5rem;
+        margin-top: 0;
+        text-transform: uppercase;
+
+    }
+
+    .newsletter__subtitle{
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        margin-bottom: 4.25rem;
+    }
+
+    .newsletter__input{
+        &.row{
+            margin:0;
+        }
+
+        .input,
+        .input,
+        .submit {
+            margin: 0.75rem auto;
+            font-size: 1.4rem;
+            padding: 2rem 1rem;
+        }
+
+        .submit{
+            cursor: pointer;
+            @include transition;
+            &:hover{
+                background-color:$main-color;
+                color: $fourth-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter{
+
+        .newsletter__input{
+
+            .news_letter_input__mail,
+            .news_letter_input__name,
+            .news_letter_input__submit {
+                margin: 0.75rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .newsletter{
+
+        &.full_width{
+            background : $bg-color-second none repeat scroll 0 0;
+            padding: 9rem 0 9.5rem;
+
+        }
+
+        &.main_container{
+            width: 102rem;
+        }
+        .newsletter__title {
+            font-size: 3.5rem;
+            margin-top: 1rem;
+        }
+
+
+        .newsletter__subtitle{
+            margin-bottom: 9rem;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+        .newsletter__input{
+
+            .news_letter_input__mail,
+            .news_letter_input__name,
+            .news_letter_input__submit {
+                width: 31%;
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+}

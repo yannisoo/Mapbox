@@ -1,0 +1,151 @@
+.remonte_news.main_container{
+    margin: 5rem auto;
+    padding:0 2rem;
+}
+
+.remonte_news {
+
+    color: $main-color;
+    text-align: left;
+        
+        .remonte_news__title{
+            font-size: 2.6rem;
+            line-height: 3rem;
+            font-weight: bold;
+            margin-bottom: 3.5rem;
+            margin-top: 0;
+            position:relative;
+
+            &.underline:before{
+                left:0;
+                transform: none;
+            }
+        }
+
+        
+        .remonte_news__article {
+            display: -ms-flexbox;
+            display: flex;
+            margin: 1.5rem 0;
+              
+                a{
+                    display: -ms-flexbox;
+                    display: flex;
+                }
+
+                &:last-child{
+                    margin-bottom: 1rem;
+                }
+                &:hover{
+                    .remonter_news_article__container{
+                        opacity: 0.8;
+                    }
+                    .remonte_news_article_text{
+                        .remonte_news_article_text__title{
+                            color:$third-color;
+                        }
+                    }
+
+                }
+
+                .remonter_news_article__container{
+                    max-height: 14rem;
+                    overflow: hidden;
+                    width: 33%;
+                    @include transition;
+                    
+                         .remonte_news_article__img {
+                            width: 100%;
+                            height: auto;
+                            @include transition; 
+                        }
+                }
+               
+
+                .remonte_news_article_text{
+                    margin-left: 1.5rem;
+
+                        .remonte_news_article_text__title{
+                            font-size: 1.5rem;
+                            line-height: 1.9rem;
+                            font-weight: bold;
+                            margin: 0.5rem 0 0 0;
+                            @include transition; 
+                        }
+
+                        .remonte_news_article_text__subtitle{
+                            text-transform: uppercase;
+                            color: $third-color;
+                            font-size: 1rem;
+                            line-height: 1.9rem;
+                            margin : 0;
+
+                                .remonte_news_article_text__subtitle-black{
+                                    color: $main-color;
+                                }
+                        }
+                }
+        }
+
+         .bouton_click{
+            @include transition;
+                &:hover{
+                background-color:$main-color;
+                color: $main-second-color;
+            }
+        }
+
+}
+
+
+@media (min-width: 1170px){
+
+    .remonte_news{
+        &.main_container {
+            margin: 10rem auto;
+        }
+
+        .remonte_news__title{
+            text-align: center;
+            font-size: 5rem;
+            line-height: 5.2rem;
+            margin-bottom: 8.5rem;
+            &.underline:before{
+                left:50%;
+                @include transformX;
+            }
+        }
+
+        .remonte_news__article {
+            margin-left: 2rem;
+            width: 48% ; 
+
+            .remonter_news_article__container{
+                width: 100%;
+                max-width: 14rem;
+            }
+
+            .remonte_news_article_text{
+
+                
+                .remonte_news_article_text__title{
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
+
+                .remonte_news_article_text__subtitle{
+                    font-size: 1.1rem;
+                    line-height: 2.8rem;
+                }
+
+            }
+
+        }
+    
+    .bouton_click{
+            width: auto;
+            margin-top: 10rem;
+            display: inline-block;
+        }
+    }
+}

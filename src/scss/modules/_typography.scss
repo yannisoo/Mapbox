@@ -1,0 +1,60 @@
+@mixin text_mobile_font_size__main{
+	font-size:1.4rem;
+}
+
+@mixin text_mobile_line_height__main{
+	line-height:2.7rem;	
+}
+
+@mixin title_mobile_font_size__main{
+	font-size:2.6rem;
+}
+
+@mixin title_mobile_line_height__main{
+	line-height:2.2rem;
+}
+
+@mixin subtitle_mobile_font_size__main{
+	font-size: 1.5rem;
+}
+
+@mixin subtitle_mobile_line_height__main{
+	line-height: 2.4rem;
+}
+
+
+
+
+@mixin text_desktop_font_size__main{
+	font-size:1.6rem;
+}
+
+@mixin text_desktop_line_height__main{
+	line-height:2.7rem;	
+}
+
+@mixin subtitle_desktop_font_size__main{
+	font-size: 1.5rem;
+}
+
+@mixin subtitle_desktop_line_height__main{
+	line-height: 2.4rem;
+}
+/* 
+@include $text_mobile_font_size__main ;
+@include $text_mobile_line_height__main;
+
+@include $title_mobile_font_size__main ;
+@include $title_mobile_line_height__main ;
+
+@include $subtitle_mobile_font_size__main ;
+@include $subtitle_mobile_line_height__main ;
+
+
+
+
+@include $text_desktop_font_size__main ;
+@include $text_desktop_line_height__main;
+
+@include $subtitle_desktop_font_size__main ;
+@include $subtitle_desktop_line_height__main ; */

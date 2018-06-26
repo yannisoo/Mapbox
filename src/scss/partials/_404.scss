@@ -1,0 +1,22 @@
+.container_error {
+    max-width: 67rem;
+    margin:20rem auto;
+    height: 30rem;
+    	.text_error{
+			text-align: center;
+			padding-top: 10rem;
+			vertical-align: middle;
+			justify-content: justify;
+			line-height: 6rem;
+    	}
+    	.link_error{
+    		text-align: center;
+    		justify-content: justify;
+    		display: block;
+    	}
+
+    	.search_error{
+			margin:0 auto;
+			width: 20rem;
+    	}
+}

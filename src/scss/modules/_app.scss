@@ -1,0 +1,77 @@
+
+
+.underline {	
+	&:before{
+ 		background:$fourth-color none repeat scroll 0 0;
+		bottom: -3rem;
+		content: "";
+		height: 0.2rem;
+		left: 50%;
+		@include transformX;
+		position: absolute;
+		width: 6.5rem;
+	}
+}
+
+.bouton_click {
+    color: $main-color;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid $main-color;
+    display: block;
+    font-size: 1.4rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.input  {
+	padding: 2rem 1rem;
+    border-radius: 5px;
+    display: block;
+    color: $main-second-color;
+    border: 2px solid $main-second-color;
+    background-color: $main-color;
+
+        	&::-webkit-input-placeholder {
+	            color: #FFF;
+	            font-size: 1.6rem;
+	            line-height: 2.2rem;
+	            margin-left: 1rem;
+	        }
+
+	        &::-moz-placeholder {
+	            color: #FFF;
+	            font-size: 1.6rem;
+	            line-height: 2.2rem;
+	            margin-left: 1rem;
+	        }
+
+	        &:-ms-input-placeholder {
+	            color: #FFF;
+	            font-size: 1.6rem;
+	            line-height: 2.2rem;
+	            margin-left: 1rem;
+	        }
+
+	        &::placeholder {
+	            color: $main-second-color;
+	            font-size: 1.6rem;
+	            line-height: 2.2rem;
+	            margin-left: 1rem;
+	        }
+}
+
+.submit {
+    padding: 2rem 1rem;
+    border-radius: 5px;
+	display: block;
+    color: $main-color;
+    border: 2px solid $fourth-color;
+    background-color: $fourth-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
